@@ -1,0 +1,612 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsabilidad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 10px 10px #ff33cc66, 0 0 120px 60px #ff33cc33 inset;
+
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #ff33cc;
+      text-shadow: 0 0 10px #ff33cc88;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .inicio-btn {
+      background: #ff33cc;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    nav button {
+      background: #111;
+      color: #ff33cc;
+      border: 2px solid #ff33cc;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    nav button:hover {
+      background: #ff33cc;
+      color: #000;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #ff33cc44;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #ff33cc22;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #ff33cc;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .card a {
+      color: #ff33cc;
+      text-decoration: underline;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    iframe {
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Responsabilidad</h1>
+    <p>Fomentar la toma de conciencia sobre las consecuencias de los actos.</p>
+    <button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i> Inicio</button>
+  </header>
+
+   <nav>
+<button onclick="mostrar('publicaciones')"><i class="fas fa-book"></i> Publicaciones</button>
+    <button onclick="mostrar('dinamicas')"><i class="fas fa-users"></i> Dinámicas</button>
+    <button onclick="mostrar('videos')"><i class="fas fa-video"></i> Videos</button>
+    <button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i> TIC</button>
+    <button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i> Lecturas</button>
+  </nav>
+
+  <section id="dinamicas"><div class="card-container">
+<div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-user-check" style="font-size:2rem;"></i>
+      <div>
+        <h3>El rol de la semana</h3>
+        <p>Cada alumno asume una responsabilidad (orden del aula, materiales, ayudar a compañeros). Se rota semanalmente y se reflexiona sobre el cumplimiento.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-calendar-alt" style="font-size:2rem;"></i>
+      <div>
+        <h3>Agenda del aula</h3>
+        <p>El grupo crea una agenda donde registran tareas, compromisos y eventos. Se elige un responsable de seguimiento. Promueve la organización compartida.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-tasks" style="font-size:2rem;"></i>
+      <div>
+        <h3>Responsable por un día</h3>
+        <p>Cada estudiante lidera una actividad o dinámica del día (pasar lista, dirigir juego, explicar tarea). Se valora su actitud y autonomía.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-broom" style="font-size:2rem;"></i>
+      <div>
+        <h3>Patrulla del orden</h3>
+        <p>Un equipo se encarga del orden y limpieza del aula. Se turnan y reflexionan al final del día sobre el valor del cuidado del entorno.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-comment" style="font-size:2rem;"></i>
+      <div>
+        <h3>Círculo de compromisos</h3>
+        <p>En grupo, se establecen compromisos para la semana. Cada uno asume uno y se hace seguimiento entre pares. Fomenta el autocontrol y la autogestión.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-handshake" style="font-size:2rem;"></i>
+      <div>
+        <h3>Contrato personal</h3>
+        <p>Cada alumno firma un contrato con objetivos personales de responsabilidad (cumplir tareas, respetar turnos, cuidar materiales). Se revisa quincenalmente.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-lightbulb" style="font-size:2rem;"></i>
+      <div>
+        <h3>Proyectos con propósito</h3>
+        <p>Se crean mini proyectos donde los alumnos se comprometen con una causa del aula o comunidad (reciclaje, biblioteca, ayuda). Responsabilidad con impacto real.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-pencil-alt" style="font-size:2rem;"></i>
+      <div>
+        <h3>Diario de decisiones</h3>
+        <p>Llevan un diario breve donde anotan decisiones que han tomado y sus consecuencias. Se reflexiona sobre aprender a elegir con responsabilidad.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-balance-scale" style="font-size:2rem;"></i>
+      <div>
+        <h3>¿Qué harías tú?</h3>
+        <p>Se presentan dilemas éticos o escolares y los alumnos discuten posibles respuestas responsables. Estimula el juicio moral.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-clock" style="font-size:2rem;"></i>
+      <div>
+        <h3>Mi tiempo, mi elección</h3>
+        <p>En una tabla, los niños registran cómo usan su tiempo libre. Se analiza si hay equilibrio y responsabilidad en sus elecciones.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-chart-line" style="font-size:2rem;"></i>
+      <div>
+        <h3>Gráfico de avances</h3>
+        <p>Cada estudiante elige un reto y registra sus avances. Se celebra el esfuerzo continuo, no solo el resultado. Visualiza el compromiso personal.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-seedling" style="font-size:2rem;"></i>
+      <div>
+        <h3>Responsable de vida</h3>
+        <p>Se asigna a cada alumno el cuidado de una planta o mascota del aula. Se observan cambios y consecuencias del cuidado o descuido.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-hand-paper" style="font-size:2rem;"></i>
+      <div>
+        <h3>Tú decides</h3>
+        <p>Se plantean situaciones reales del aula donde el grupo debe tomar decisiones. Se analizan responsabilidades individuales y colectivas.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-laptop" style="font-size:2rem;"></i>
+      <div>
+        <h3>Tarea tecnológica</h3>
+        <p>Asignan un rol digital: investigar, presentar, subir recursos. Deben entregar resultados en plazo. Refuerza compromiso en entorno TIC.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-smile" style="font-size:2rem;"></i>
+      <div>
+        <h3>Responsables de emociones</h3>
+        <p>Cada uno anota qué hace para cuidar su bienestar emocional. Se comparte cómo asumir emociones sin culpar a otros.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-list" style="font-size:2rem;"></i>
+      <div>
+        <h3>Lista de cosas por hacer</h3>
+        <p>Cada día, los alumnos anotan 3 tareas escolares o personales a cumplir. Se revisa a final de jornada si lograron completar su lista.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-clipboard-check" style="font-size:2rem;"></i>
+      <div>
+        <h3>Reto semanal</h3>
+        <p>Cada semana se lanza un reto de responsabilidad (no olvidar mochila, ayudar a alguien, cumplir horarios). Hay reconocimiento grupal.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-user-clock" style="font-size:2rem;"></i>
+      <div>
+        <h3>Calendario personal</h3>
+        <p>Cada niño lleva un calendario con tareas y responsabilidades marcadas. Se enseña a planificar a corto y medio plazo.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-headphones" style="font-size:2rem;"></i>
+      <div>
+        <h3>Escuchar también es cumplir</h3>
+        <p>Juego donde se dan instrucciones orales y deben seguirse con precisión. Revaloriza la atención como parte de la responsabilidad.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-award" style="font-size:2rem;"></i>
+      <div>
+        <h3>Reconocimiento al compromiso</h3>
+        <p>Se crean medallas simbólicas para quienes han cumplido responsablemente durante la semana. Refuerza positivamente las conductas.</p>
+      </div>
+    </div>
+    
+</div></section>
+
+  <section id="publicaciones"><div class="card-container">
+<!-- 1 -->
+<div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+  <i class="fas fa-book" style="font-size:2rem;"></i>
+  <div>
+    <h3>Educar con responsabilidad (Fundación Horacio Zorraquín)</h3>
+    <p>Programa curricular completo para primaria con actividades para fomentar la responsabilidad.</p>
+    <a href="https://es.scribd.com/document/708152525/EDUCAR-CON-RESPONSABILIDAD" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+  </div></div>
+
+<!-- 2 -->
+<div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+  <i class="fas fa-book" style="font-size:2rem;"></i>
+  <div>
+    <h3>El valor de la responsabilidad en los niños</h3>
+    <p>Análisis sobre cómo la responsabilidad impacta en el desarrollo prosocial infantil.</p>
+    <a href="https://www.researchgate.net/publication/28230218_El_valor_de_la_responsabilidad_en_los_ninos_de_educacion_infantil_y_su_implicacion_en_el_desarrollo_del_comportamiento_prosocial" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+  </div></div>
+
+<!-- 3 -->
+<div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+  <i class="fas fa-book" style="font-size:2rem;"></i>
+  <div>
+    <h3>Cómo educar la responsabilidad en los niños</h3>
+    <p>Guía práctica para padres y docentes, centrada en hábitos y ejemplo.</p>
+    <a href="https://herrikoa.org/wp-content/uploads/2016/10/Responsabilidad-infantil.pdf" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+  </div></div>
+
+<!-- 4 -->
+<div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+  <i class="fas fa-book" style="font-size:2rem;"></i>
+  <div>
+    <h3>Formación del valor responsabilidad en la Escuela Pedagógica</h3>
+    <p>Estudio reciente sobre estrategias para enseñar responsabilidad desde Educación Física.</p>
+    <a href="https://www.researchgate.net/publication/389134450_La_formacion_de_valor_responsabilidad_en_la_Escuela_Pedagogica_desde_la_disciplina_Educacion_Fisica" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+  </div></div>
+
+<!-- 5 -->
+<div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+  <i class="fas fa-book" style="font-size:2rem;"></i>
+  <div>
+    <h3>Desarrollo de conductas responsables de 3 a 12 años</h3>
+    <p>Documento de educación infantil que muestra etapas y aprendizajes crecientes en responsabilidad.</p>
+    <a href="https://www.educacion.navarra.es/documents/713364/714655/conductas.pdf/aa55d7b5-3ad0-40a4-be4d-e2cbd152bf02" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+  </div></div>
+
+<!-- 6 -->
+<div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+  <i class="fas fa-book" style="font-size:2rem;"></i>
+  <div>
+    <h3>El valor de la responsabilidad en la educación infantil</h3>
+    <p>Profundización teórica sobre la dimensión sociológica y personal de la responsabilidad infantil.</p>
+    <a href="https://rieoei.org/historico/deloslectores/2646Monsalvov2.pdf" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+  </div></div>
+
+<!-- 7 -->
+<div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+  <i class="fas fa-book" style="font-size:2rem;"></i>
+  <div>
+    <h3>Educar en la corresponsabilidad</h3>
+    <p>Documento del CEAPA sobre corresponsabilidad, estrechamente vinculada a la responsabilidad personal y social.</p>
+    <a href="https://www.ceapa.es/wp-content/uploads/2021/03/22-EDUCAR-EN-LA-CORRESPONSABILIDAD.pdf" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+  </div></div>
+
+<!-- 8 -->
+<div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+  <i class="fas fa-book" style="font-size:2rem;"></i>
+  <div>
+    <h3>Disciplina positiva</h3>
+    <p>Resumen del enfoque que promueve la responsabilidad a través del respeto mutuo y la autonomía.</p>
+    <a href="https://es.wikipedia.org/wiki/Disciplina_positiva" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+  </div></div>
+
+<!-- 9 -->
+<div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+  <i class="fas fa-book" style="font-size:2rem;"></i>
+  <div>
+    <h3>Cómo educar en el valor de la responsabilidad a los niños</h3>
+    <p>Artículo práctico con hábitos recomendados para trabajar responsabilidad desde la escuela.</p>
+    <a href="https://www.guiainfantil.com/articulos/educacion/valores/la-responsabilidad-educar-en-valores-a-los-ninos/" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+  </div></div>
+
+<!-- 10 -->
+<div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+  <i class="fas fa-book" style="font-size:2rem;"></i>
+  <div>
+    <h3>La educación en valores y su práctica en el aula</h3>
+    <p>Artículo universitario que aborda cómo el aula es espacio para trabajar valores como la responsabilidad.</p>
+    <a href="https://dialnet.unirioja.es/descarga/articulo/1012022.pdf" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver publicación</a>
+  </div></div>
+</div></section>
+
+  <section id="videos"><div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> Rita se hace responsable</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/qTnhRtMDbgk" title="Rita se hace responsable" frameborder="0" allowfullscreen></iframe>
+      <p>Animación sobre una niña llamada Rita que aprende a enfrentar las consecuencias de sus actos.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> Responsabilidades en la escuela</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/EzONfyAx-Ts" title="Responsabilidades en la escuela" frameborder="0" allowfullscreen></iframe>
+      <p>Video educativo que explica el valor de la responsabilidad en el entorno escolar.</p>
+    </div>
+
+    
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> El valor de la responsabilidad</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/LReIwyjCJq0" title="El valor de la responsabilidad" frameborder="0" allowfullscreen></iframe>
+      <p>Adaptación de La Cigarra y la Hormiga que enseña la importancia de cumplir deberes antes del ocio.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> ¿Qué es la responsabilidad?</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/EJI-uMnvwps" title="Qué es la responsabilidad" frameborder="0" allowfullscreen></iframe>
+      <p>Definición sencilla y clara para niños sobre qué significa ser responsable.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> Learn Responsibility with Bubbles and Friends</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/W5nXfCSCtAk" title="Learn Responsibility with Bubbles and Friends" frameborder="0" allowfullscreen></iframe>
+      <p>Cuento animado que promueve la responsabilidad mediante una historia con amigos y burbujas.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> La vida secreta de los niños: Resistencia a los caramelos</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/G0Ak5hUC-JI?si=yHTVgHKOonV6JNPV" title="La Vida Secreta de los Niños. Resistencia a los caramelos" frameborder="0" allowfullscreen></iframe>
+      <p>Una prueba de autocontrol y cumplimiento de normas frente a la tentación de dulces.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> Buenas vibraciones</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/ozBsbaoao30?si=_mJAjevBIdQ3qOty" title="Good Vibrations cortometraje" frameborder="0" allowfullscreen></iframe>
+      <p>Animación que reflexiona sobre cómo actuar con responsabilidad ante decisiones espontáneas.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> One Small Step</h3>
+      <iframe width="100%" height="215" src="https://player.vimeo.com/video/255698341" title="One Small Step" frameborder="0" allowfullscreen></iframe>
+      <p>Historia de esfuerzo y perseverancia en el cumplimiento de metas personales con apoyo familiar.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> Vida fácil</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/_UeIwd0jwso?si=TLc1AbNQx_jJSFC3" title="Vida fácil CGI corto" frameborder="0" allowfullscreen></iframe>
+      <p>Una niña descubre que evitar sus responsabilidades con ayuda mágica puede tener consecuencias inesperadas.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> Una ciudad de cuidados</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/pe8SAu7sFWU?si=uiyHM27EUpI9Mwil" title="Una ciudad de cuidados" frameborder="0" allowfullscreen></iframe>
+      <p>Corto educativo que promueve asumir tareas y responsabilidades compartidas por el bienestar común.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> Lighthouse</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/huirfCg9jm0" title="Lighthouse short film" frameborder="0" allowfullscreen></iframe>
+      <p>Un faro mantenido entre todos como metáfora de responsabilidad compartida.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> Timmy Learns Responsibility!</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/ei9ERm9e-_8" title="Timmy learns responsibility" frameborder="0" allowfullscreen></iframe>
+      <p>Timmy se enfrenta a las consecuencias de su olvido, aprendiendo el valor de cumplir con sus deberes.</p>
+    </div>
+
+       <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> The Present</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/3XA0bB79oGc" title="The Present" frameborder="0" allowfullscreen></iframe>
+      <p>Un niño descubre la responsabilidad de cuidar a un cachorro con discapacidad, reforzando el compromiso emocional y la empatía.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ffc107;"></i> The Bigger Picture</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/J7vPiyp4B_k?si=9yuHkl22n3oFMCa-" title="The Bigger Picture" frameborder="0" allowfullscreen></iframe>
+      <p>Animación en stop‑motion que retrata cómo dos hermanos enfrentan la responsabilidad de cuidar a su madre y las dinámicas familiares que surgen.</p>
+    </div>
+
+</div></section>
+  <section id="tic"><div class="card-container">
+
+    <!-- Recurso 1: Interland – Sé genial en Internet (Google) -->
+    <div class="card">
+      <h3><i class="fas fa-gamepad"></i> Interland – Sé genial en Internet</h3>
+      <p>Una aventura en línea con cuatro juegos interactivos que enseñan a los niños a proteger su información, ser respetuosos en línea y actuar con responsabilidad.</p>
+      <a href="https://beinternetawesome.withgoogle.com/es-419_all/" target="_blank">Jugar a Interland</a>
+    </div>
+
+    <!-- Recurso 2: Juegos didácticos interactivos – INCIBE -->
+    <div class="card">
+      <h3><i class="fas fa-laptop"></i> Juegos didácticos interactivos – INCIBE</h3>
+      <p>Ofrece actividades como sopa de letras, ruleta de palabras y mosaicos para trabajar valores como el respeto, la seguridad y la responsabilidad en Internet.</p>
+      <a href="https://www.incibe.es/menores/juegos/juegos-didacticos/juegos-didacticos-interactivos" target="_blank">Explorar juegos</a>
+    </div>
+
+    <!-- Recurso 3: Responsabilidad digital – Smile and Learn -->
+    <div class="card">
+      <h3><i class="fas fa-mobile-alt"></i> Responsabilidad digital – Smile and Learn</h3>
+      <p>Aplicación educativa que incluye juegos, vídeos y cuentos para enseñar a los niños a equilibrar su tiempo en línea con otras actividades y utilizar Internet de manera responsable.</p>
+      <a href="https://www.smileandlearn.com/responsabilidad-digital/" target="_blank">Descargar Smile and Learn</a>
+    </div>
+
+    <!-- Recurso 4: La mochila de las responsabilidades – YouTube -->
+    <div class="card">
+      <h3><i class="fas fa-video"></i> La mochila de las responsabilidades – YouTube</h3>
+      <p>Un video educativo que presenta de forma divertida y comprensible el concepto de responsabilidad y cómo aplicarlo en la vida diaria.</p>
+      <a href="https://www.youtube.com/watch?v=_n76YGximJs" target="_blank">Ver video</a>
+    </div>
+
+    <!-- Recurso 5: Actividades de Ciudadanía Digital – Ministerio de Educación de Chile -->
+    <div class="card">
+      <h3><i class="fas fa-graduation-cap"></i> Actividades de Ciudadanía Digital – Ministerio de Educación de Chile</h3>
+      <p>Ofrece actividades interactivas para trabajar temas como salud y bienestar digital, alfabetización digital y ciberseguridad, adaptadas a diferentes niveles educativos.</p>
+      <a href="https://ciudadaniadigital.mineduc.cl/recurso/actividades-de-ciudadania-digital/" target="_blank">Acceder a actividades</a>
+    </div>
+
+
+    <!-- Recurso 1: Juegos educativos sobre el uso seguro y responsable de las TIC -->
+    <div class="card">
+      <h3><i class="fas fa-gamepad"></i> Juegos educativos sobre el uso seguro y responsable de las TIC</h3>
+      <p>EducaInternet ofrece una serie de juegos interactivos diseñados para enseñar a los niños a reconocer y practicar la responsabilidad digital en diversas situaciones de la vida diaria.</p>
+      <a href="https://blog.educainternet.es/index.php/2022/11/20/juegos-educativos-sobre-el-uso-seguro-y-responsable-de-las-tic/?utm_source=chatgpt.com" target="_blank">Acceder al recurso</a>
+    </div>
+
+    <!-- Recurso 2: Uso seguro y responsable de las TIC en el entorno educativo -->
+    <div class="card">
+      <h3><i class="fas fa-school"></i> Uso seguro y responsable de las TIC en el entorno educativo</h3>
+      <p>Editorial Esquematízate proporciona herramientas y recursos para garantizar un uso seguro y responsable de las TIC en el entorno educativo, incluyendo consejos para docentes y padres.</p>
+      <a href="https://editorial-esquematizate.es/uso-responsable-tic-entorno-educativo/?utm_source=chatgpt.com" target="_blank">Acceder al recurso</a>
+    </div>
+
+    <!-- Recurso 3: Juegos y actividades para aprender y disfrutar de la tecnología en familia -->
+    <div class="card">
+      <h3><i class="fas fa-laptop"></i> Juegos y actividades para aprender y disfrutar de la tecnología en familia</h3>
+      <p>INCIBE ofrece juegos didácticos interactivos, como puzzles y sopas de letras en línea, para trabajar valores tan importantes como el respeto, la seguridad y la responsabilidad en Internet.</p>
+      <a href="https://www.incibe.es/menores/blog/juegos-actividades-familias?utm_source=chatgpt.com" target="_blank">Acceder al recurso</a>
+    </div>
+
+    <!-- Recurso 4: Juego de ¿Qué comprenden las habilidades TIC? -->
+    <div class="card">
+      <h3><i class="fas fa-puzzle-piece"></i> Juego de ¿Qué comprenden las habilidades TIC?</h3>
+      <p>Cerebriti presenta un juego interactivo que ayuda a los estudiantes a identificar y comprender las habilidades necesarias para un uso responsable de las TIC.</p>
+      <a href="https://www.cerebriti.com/juegos-de-tecnologia/que-comprenden-las-habilidades-tic?utm_source=chatgpt.com" target="_blank">Acceder al recurso</a>
+    </div>
+
+    <!-- Recurso 5: Guía para uso responsable de las TIC -->
+    <div class="card">
+      <h3><i class="fas fa-book"></i> Guía para uso responsable de las TIC</h3>
+      <p>El CPIFP Los Viveros ha elaborado una guía que establece normas y recomendaciones para el uso responsable de los recursos TIC en el ámbito educativo.</p>
+      <a href="https://cpifplosviveros.es/wp-content/uploads/2024/02/Guia-para-uso-responsable-TIcs-23-24.pdf?utm_source=chatgpt.com" target="_blank">Acceder al recurso</a>
+    </div>
+
+</div></section>
+  <section id="lecturas"><div class="card-container">
+<div class="card">
+  <img src="img/la_gallinita_roja.jpg" alt="La gallinita roja" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>La gallinita roja</h3>
+  <p><strong>Autor:</strong> Paul Galdone<br>
+     <strong>Edad:</strong> 9-12 años</p>
+  <p>Clásico cuento sobre una gallinita que pide ayuda y nadie colabora hasta la cosecha. Enseña que la responsabilidad compartida es clave para el éxito.</p>
+</div>
+
+<div class="card">
+  <img src="img/lily_bolsa_morado.jpg" alt="La bolsa morada de Lily" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Lily y su bolsa morada</h3>
+  <p><strong>Autor:</strong> Kevin Henkes (adapt.)<br>
+     <strong>Edad:</strong> 9-12 años</p>
+  <p>Basado en *Lily’s Purple Plastic Purse*. Lily rompe las reglas, debe asumir consecuencias y aprende a pedir perdón. Ideal para hablar de autocontrol y responsabilidad personal. :contentReference[oaicite:1]{index=1}</p>
+</div>
+
+<div class="card">
+  <img src="img/non_fault_george.jpg" alt="A George no fue culpa mía" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>A George no fue culpa mía</h3>
+  <p><strong>Autor:</strong> Nancy Carlson (adapt.)<br>
+     <strong>Edad:</strong> 9-12 años</p>
+  <p>Basado en *It’s Not My Fault*. George pone excusas ante sus errores. Tras entenderlos, acepta las consecuencias. Ayuda a hablar de asumir responsabilidades.</p>
+</div>
+
+<div class="card">
+  <img src="img/a_catfish_tale.jpg" alt="A CatFish Tale" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>A CatFish Tale</h3>
+  <p><strong>Autor:</strong> Kathy Brodsky<br>
+     <strong>Edad:</strong> 9-12 años</p>
+  <p>Un gato cuida peces y aprende que cuidar de otros exige compromiso y confiabilidad. Un recurso excelente para trabajar responsabilidad y empatía. :contentReference[oaicite:2]{index=2}</p>
+</div>
+
+<div class="card">
+  <img src="img/shiloh.jpg" alt="Shiloh" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Shiloh</h3>
+  <p><strong>Autor:</strong> Phyllis Reynolds Naylor<br>
+     <strong>Edad:</strong> 9-12 años</p>
+  <p>Marty toma una decisión difícil para ayudar a un perro maltratado, asume consecuencias y trabaja para hacer las cosas bien. Fuerte lección sobre responsabilidad moral. :contentReference[oaicite:3]{index=3}</p>
+</div>
+
+<div class="card">
+  <img src="img/this_is_not_my_hat.jpg" alt="This Is Not My Hat" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>This Is Not My Hat</h3>
+  <p><strong>Autor:</strong> Jon Klassen<br>
+     <strong>Edad:</strong> 9-12 años</p>
+  <p>Un pez roba un sombrero y narra excusas. La historia invita a reflexionar sobre consecuencias, honestidad y responsabilidad por nuestras acciones. :contentReference[oaicite:4]{index=4}</p>
+</div>
+
+
+</div></section>
+
+  <footer>
+    EscolaDiversa - Competencia Clave: Responsabilidad
+  </footer>
+
+  <script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
