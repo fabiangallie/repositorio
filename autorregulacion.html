@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autorregulación</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+       box-shadow: 0 0 10px 10px #00ffff66, 0 0 120px 60px #00ffff33 inset;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .inicio-btn {
+      background: #00ffff;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav button {
+      background: #111;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    nav button:hover {
+      background: #00ffff;
+      color: #000;
+    }
+
+    section {
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #00ffff44;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #00ffff22;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      color: #00ffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .card a {
+      color: #00ffff;
+      text-decoration: underline;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    iframe {
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Autorregulación</h1>
+    <p>Comprender mis pensamientos, emociones y fortalezas</p>
+    <button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i> Inicio</button>
+  </header>
+
+ <nav>
+<button onclick="mostrar('publicaciones')"><i class="fas fa-book-open"></i> Publicaciones</button>
+<button onclick="mostrar('dinamicas')"><i class="fas fa-people-arrows"></i> Dinámicas</button>
+<button onclick="mostrar('videos')"><i class="fas fa-video"></i> Videos</button>
+<button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i> TIC</button>
+<button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i> Lecturas</button>
+</nav>
+
+<section id="dinamicas">
+  
+  <div class="card-container">
+    <div class="card">
+      <h3>🧘 Respiración profunda</h3>
+      <p>Se propone guiar a los alumnos a realizar respiraciones lentas y conscientes. Pueden colocarse en círculo, cerrar los ojos y acompañar la respiración con una música suave o contar hasta 4 al inspirar, mantener y exhalar. Al finalizar, comentan cómo se sienten. Es ideal para aplicar al inicio o final del día escolar.</p>
+    </div>
+    <div class="card">
+      <h3>🌋 El volcán</h3>
+      <p>Se representa con el cuerpo cómo se acumula tensión emocional dentro, como si fueran volcanes a punto de explotar. Luego se identifican las señales físicas de la rabia y se explican formas de liberar esa energía sin hacer daño, como apretar una pelota o escribir lo que molesta.</p>
+    </div>
+    <div class="card">
+      <h3>🎨 Rueda de las emociones</h3>
+      <p>Los alumnos dibujan una rueda dividida en secciones con diferentes emociones. En cada sección escriben cómo se siente esa emoción en el cuerpo y qué pueden hacer para regularla. Después, comparten con el grupo sus estrategias favoritas.</p>
+    </div>
+    <div class="card">
+      <h3>🚦 Semáforo emocional</h3>
+      <p>Los alumnos aprenden a identificar tres estados: Rojo (parar), Amarillo (pensar) y Verde (actuar). Se les entregan tarjetas o dibujan semáforos, y practican qué hacer en cada color. Sirve para trabajar la impulsividad en situaciones cotidianas.</p>
+    </div>
+    <div class="card">
+      <h3>🛑 Tiempo fuera</h3>
+      <p>Se habilita un espacio en el aula al que los alumnos pueden acudir de forma voluntaria cuando sienten que necesitan calmarse. Allí pueden dibujar, leer o respirar. Se fomenta que elijan el momento y se reconozca como una herramienta de autocuidado.</p>
+    </div>
+    <div class="card">
+      <h3>🧴 Botella de la calma</h3>
+      <p>Se fabrica una botella con agua, pegamento y purpurina. Al agitarla, los alumnos observan cómo la brillantina se remansa poco a poco, simbolizando cómo se calman sus pensamientos. Es ideal para enseñar a esperar y recuperar la tranquilidad.</p>
+    </div>
+    <div class="card">
+      <h3>🔟 Cuenta hasta 10</h3>
+      <p>En grupo, se simulan situaciones de tensión o enfado y se ensaya la técnica de contar mentalmente hasta 10 antes de reaccionar. Luego se evalúa cómo cambia la respuesta emocional si se da ese margen de tiempo.</p>
+    </div>
+    <div class="card">
+      <h3>🎲 El cubo calmante</h3>
+      <p>Se construye un dado con acciones calmantes en cada cara (respirar, estirarse, imaginar, escribir, escuchar música, hablar). Ante una emoción fuerte, el alumno lanza el cubo y realiza la acción que aparece.</p>
+    </div>
+    <div class="card">
+      <h3>⏳ El reloj de arena</h3>
+      <p>Se utiliza un reloj de arena pequeño como temporizador para invitar a reflexionar antes de actuar. Cada vez que un alumno se sienta alterado puede girarlo y durante ese tiempo pensar en cómo responder con calma.</p>
+    </div>
+    <div class="card">
+      <h3>🗣️ Palabra segura</h3>
+      <p>Cada niño elige una palabra que usará para indicar que necesita parar y calmarse. El grupo respeta esa palabra como señal de autocuidado. Se trabaja el respeto mutuo y el reconocimiento de los propios límites.</p>
+    </div>
+    <div class="card">
+      <h3>📏 Escala de emociones</h3>
+      <p>Se crea una escala visual con colores o números que representan niveles de intensidad emocional. Los alumnos practican identificando dónde están en la escala en diferentes momentos del día, y qué hacer en cada nivel.</p>
+    </div>
+    <div class="card">
+      <h3>📦 Mi caja de la calma</h3>
+      <p>Se invita a cada alumno a preparar una caja con objetos que le transmitan calma (peluches, texturas, aromas, imágenes, frases). La caja puede usarse cuando sientan ansiedad o enfado. Luego, comparten con sus compañeros lo que incluye su caja.</p>
+    </div>
+    <div class="card">
+      <h3>🧘 Yoga de las emociones</h3>
+      <p>Se relacionan emociones con posturas de yoga: por ejemplo, la ira con una postura de fuerza, la tristeza con una postura recogida. Se realiza una pequeña secuencia corporal para identificar y transformar las emociones.</p>
+    </div>
+    <div class="card">
+      <h3>📔 Mi diario emocional</h3>
+      <p>Durante unos minutos al día, los alumnos escriben en su diario cómo se han sentido, qué les ha molestado o qué les ha hecho sentir bien. Luego pueden releer sus anotaciones para identificar patrones y cambios.</p>
+    </div>
+    <div class="card">
+      <h3>🎈 El globo que sube</h3>
+      <p>Se les entrega un globo desinflado en el que escriben una emoción intensa o un pensamiento negativo. Luego lo inflan y, al soltarlo, lo ven alejarse, simbolizando que sueltan lo que les agobia. Ideal para trabajar la visualización.</p>
+    </div>
+    <div class="card">
+      <h3>🪨 La piedra del autocontrol</h3>
+      <p>Se entrega una piedra pequeña y lisa como símbolo del autocontrol. Cada alumno la lleva en el bolsillo y la aprieta cuando necesite recordar que puede elegir cómo actuar. Se acompaña de reflexión sobre decisiones.</p>
+    </div>
+    <div class="card">
+      <h3>🔁 Relevo de emociones</h3>
+      <p>Se forma una carrera por relevos donde cada alumno, al recibir el testigo, nombra una emoción y una forma positiva de gestionarla. Gana el equipo que logre compartir más estrategias de regulación emocional.</p>
+    </div>
+    <div class="card">
+      <h3>🖍️ Colorea tu calma</h3>
+      <p>Se reparten mandalas o dibujos repetitivos para colorear en silencio, acompañados de música tranquila. Es un ejercicio de atención plena que ayuda a relajar el cuerpo y reducir el estrés.</p>
+    </div>
+    <div class="card">
+      <h3>👾 Los monstruos del autocontrol</h3>
+      <p>Se dibujan "monstruos" que representan diferentes emociones que hacen perder el control (rabia, miedo, tristeza). Luego se buscan formas de calmarlos y se construye un cartel con estrategias eficaces.</p>
+    </div>
+    <div class="card">
+      <h3>🎛️ Mis botones emocionales</h3>
+      <p>Se identifica qué cosas o situaciones "activan" nuestras emociones intensas. Cada alumno dibuja sus botones y, junto al dibujo, escribe formas de responder sin perder el control.</p>
+    </div>
+  </div>
+</section>
+
+<section id="publicaciones">
+  <div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> La autorregulación emocional en la educación secundaria (SEP)</h3>
+      <p>Manual oficial de Educación Socioemocional que describe técnicas y estrategias para ayudar a adolescentes a regular sus emociones.</p>
+      <a href="https://educacionbasica.sep.gob.mx/wp-content/uploads/2022/12/C2_9Tutoria-y-Educacion-socioemocional-secundaria-autorregulacion-de-las-emociones.pdf" target="_blank">Leer más (SEP)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> Manual de Regulación emocional y Mindfulness en niños</h3>
+      <p>Guía práctica con herramientas de mindfulness y relajación pensada para niños en etapa escolar.</p>
+      <a href="https://neuro-class.com/wp-content/uploads/2024/02/Manual-Regulacion-emocional-en-ninos.pdf" target="_blank">Leer más (PDF)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> 100 ideas de mindfulness en el aula (México)</h3>
+      <p>Recopilación de actividades sencillas para integrar la atención plena y mejorar la autorregulación en primaria.</p>
+      <a href="https://centrohumanista.edu.mx/biblioteca/files/original/7abcebfdf7b43704adf3a0e51744c5aa.pdf" target="_blank">Leer más (PDF)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> Mindfulness para la autorregulación emocional (UANL)</h3>
+      <p>Trabajo académico que explora cómo la atención plena ayuda a los niños a regular emociones y estrés.</p>
+      <a href="https://eprints.uanl.mx/22285/7/22285.pdf" target="_blank">Leer más (Trabajo académico)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> La autorregulación emocional: revisión educativa</h3>
+      <p>Artículo reciente que analiza desde una perspectiva educativa las estrategias prácticas de autorregulación.</p>
+      <a href="https://revistas.umariana.edu.co/index.php/fedumar/article/download/3120/3424/7787" target="_blank">Leer más (PDF)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> Estrategias de yoga y mindfulness para regular emociones</h3>
+      <p>Trabajo fin de grado sobre la aplicación de yoga y mindfulness para mejorar la autorregulación en infantil.</p>
+      <a href="https://dspace.uib.es/xmlui/bitstream/handle/11201/147455/Puentes_Sheila.pdf?isAllowed=y&sequence=1" target="_blank">Leer más (TFG – UIB)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> Autorregulación y funciones ejecutivas</h3>
+      <p>Informe sobre cómo las funciones ejecutivas como memoria y control inhibitorio influyen en autorregulación.</p>
+      <a href="https://journals.sagepub.com/doi/full/10.1177/1745691612454304" target="_blank">Leer más (Artículo SAGE)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> Trabajo fin de grado: mindfulness y emociones en primaria</h3>
+      <p>Propuesta didáctica para aplicar mindfulness en primaria y potenciar la regulación emocional.</p>
+      <a href="https://uvadoc.uva.es/bitstream/handle/10324/29206/TFG-O-1203.pdf?isAllowed=y&sequence=1" target="_blank">Leer más (TFG – UVA)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> Autorregulación en primaria (ResearchGate)</h3>
+      <p>Artículo que reflexiona sobre cómo entrenar estrategias de autorregulación en los primeros años escolares.</p>
+      <a href="https://www.researchgate.net/publication/276304623_La_autorregulacion_en_primaria" target="_blank">Leer más (ResearchGate)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-book"></i> Mindfulness y pensamiento crítico en la Escuela</h3>
+      <p>Estudio que relaciona la práctica de mindfulness con el desarrollo del pensamiento crítico y regulación emocional.</p>
+      <a href="https://riuma.uma.es/xmlui/bitstream/handle/10630/27541/Mindfulnees_JoseHierrezuelo.pdf?sequence=1" target="_blank">Leer más (UMÁ)</a>
+    </div>
+
+  </div>
+</section>
+<section id="videos">
+ 
+  <div class="card-container">
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> El poder del autocontrol</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/QpyyEhK1f0A?si=mtffLv24hXf2pvJW" title="Experimento del malvavisco" frameborder="0" allowfullscreen></iframe>
+      <p>Este clásico experimento muestra cómo niños pequeños enfrentan el reto de resistir una golosina para obtener una recompensa mayor. Una excelente forma de debatir sobre la importancia del autocontrol.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#f4c542;"></i> Gestión de las emociones</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/0pvUY3pBenA?si=jo1XrLzEPMw0JxaF" title="Gestión de las emociones" frameborder="0" allowfullscreen></iframe>
+      <p>Video educativo para niños y niñas sobre autorregulación emocional: por qué es importante y cómo gestionarla adecuadamente.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ba68c8;"></i> Calma en la tormenta</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/YFSc7Ck0Ao0" title="Calma en la tormenta" frameborder="0" allowfullscreen></iframe>
+      <p>Relajación guiada que enseña a los niños a calmar su mente y cuerpo. Ideal para trabajar el mindfulness en el aula.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#81c784;"></i> Solo respira</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/i9pM5-gytdg?si=XKV6UEwQg9A8b62H" title="Solo respira" frameborder="0" allowfullscreen></iframe>
+      <p>Cortometraje sobre el enfado, su origen y herramientas para gestionarlo desde la respiración consciente.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ce93d8;"></i> Little Icarus</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/8O9pFf6a1-A?si=hliIYFhXuJ64YWX6" title="Little Icarus" frameborder="0" allowfullscreen></iframe>
+      <p>Un niño intenta que sus aviones vuelen sin éxito, lo que lo frustra. Una historia que permite reflexionar sobre la paciencia y el autocontrol.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#81c784;"></i> Una lección en las nubes</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/Zg5ktnl4EBY?si=QF1VRDDqj9WF6xMp" title="Una lección en las nubes" frameborder="0" allowfullscreen></iframe>
+      <p>Una historia sobre impulsividad y errores comunes. El protagonista aprende con su abuelo el valor de la paciencia.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ce93d8;"></i> Resistir la tentación de los caramelos</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/G0Ak5hUC-JI?si=xN3Xdske4fu0ZKE8" title="Resistir la tentación de los caramelos" frameborder="0" allowfullscreen></iframe>
+      <p>Niños frente a una máquina de chuches: una oportunidad para trabajar la espera, la gratificación diferida y el autocontrol.</p>
+    </div>
+
+   <div class="card">
+      <h3><i class="fas fa-film" style="color:#ce93d8;"></i> El curso de la naturaleza</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/R5ZilEpX4Hc?si=-8bKytr0j33OMV0x" title="El curso de la naturaleza" frameborder="0" allowfullscreen></iframe>
+      <p>Tenemos otro ejemplo de la relación padre-hijo y las muchas facetas que tienen la crianza y cariño filial. La pequeña hija de la Madre Naturaleza muestra rebeldía y desobediencia, y desconoce las consecuencias que puede traer su actuar.</p>
+    </div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Gestión de emociones para niños – autorregulación</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/0pvUY3pBenA" title="GESTIÓN de EMOCIONES para niños AUTORREGULACIÓN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Vídeo educativo para niños y niñas en el que aprenderán sobre la autorregulación emocional, una habilidad clave para expresar lo que sienten de forma adecuada.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Autorregulación en niños y niñas</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/jZMA-wjs0oU" title="Autorregulación en niños y niñas" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Vídeo que explica qué es la autorregulación emocional y por qué es fundamental para el bienestar de los niños y niñas.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Trucos para sentirte mejor – autorregulación</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/aQinbTzVS9Q" title="Trucos para SENTIRTE MEJOR AUTORREGULACIÓN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Vídeo con estrategias prácticas que los niños pueden usar para gestionar mejor sus emociones en situaciones difíciles.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Autorregulación para niñas y niños (control de impulsos)</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/HkOiP0W_dm8" title="Autorregulación para niñas y niños" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Vídeo didáctico que enseña de forma lúdica a controlar impulsos y actuar con calma ante las emociones.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Una casa en el cerebro – autorregulación</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/xDArZr7RrRU" title="Una casa en el cerebro AUTORREGULACIÓN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Vídeo que ayuda a los niños a entender cómo actúa el cerebro bajo emociones intensas y cómo regularlas mejor.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Relajación, respiración y atención plena para niños</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/n5we-QwDGMc" title="RELAJACIÓN, RESPIRACIÓN y ATENCIÓN PLENA para niños" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Vídeo con técnicas de respiración, relajación y mindfulness dirigidas a niños para favorecer su autorregulación emocional.</p>
+</div>
+
+
+  </div>
+</section>
+
+<section id="tic">
+ 
+  <div class="card-container">
+    <div class="card">
+      <h3><i class="fas fa-water" style="color:#4db6ac;"></i> El mar. Relajación</h3>
+      <p>Este recurso propone cuentos breves para escuchar con los ojos cerrados, fomentando la visualización mental y la relajación. Ayuda a trabajar la respiración y la concentración.</p>
+      <a href="https://educaixa.org/microsites/KitsCaixa_valores/visualizacion_1/Contenidos/recursos_aux/index.html" target="_blank">Ver recurso</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-brain" style="color:#ffb74d;"></i> Nexxo</h3>
+      <p>App para entrenar la atención y el autocontrol en niños con o sin TDAH. Mejora los procesos de regulación de conducta mediante tareas lúdicas.</p>
+      <a href="https://apps.apple.com/es/app/nexxo/id979045960" target="_blank">Ver app</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-child" style="color:#7986cb;"></i> Mindful Powers</h3>
+      <p>App con cuentos interactivos para guiar a los niños en la práctica del mindfulness y el autocontrol. Disponible en español.</p>
+      <a href="https://www.understood.org/es-mx/school-learning/assistive-technology/finding-an-assistive-technology/8-meditation-apps-for-kids#slide-1" target="_blank">Ver app</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-leaf" style="color:#ba68c8;"></i> Petit BamBou</h3>
+      <p>Incluye más de 200 meditaciones guiadas para niños. Ideal para comenzar a practicar la atención plena. Disponible en español para Android e iOS.</p>
+      <a href="https://www.petitbambou.com/es" target="_blank">Ver app</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-peace" style="color:#9575cd;"></i> Meditación KIDS – Hacia la calma</h3>
+      <p>Seis meditaciones y cuentos interactivos para enseñar a los niños a relajar su mente y regular sus emociones. Disponible en español para móviles.</p>
+      <a href="https://hacialacalma.com" target="_blank">Ver app</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-mountain" style="color:#4db6ac;"></i> Headspace</h3>
+      <p>Famosa app de meditación ahora también para niños. Incluye ejercicios de respiración y relajación con personajes y sonidos agradables. En español.</p>
+      <a href="https://www.headspace.com/es" target="_blank">Ver app</a>
+    </div>
+  </div>
+</section>
+
+<section id="lecturas">
+  
+  <div class="card-container">
+
+
+    <div class="card">
+      <img src="img/coraje.jpg" alt="Coraje" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Coraje</h3>
+      <p><strong>Autor:</strong> Raina Telgemeier<br>
+      <strong>ISBN:</strong> 9788417708931</p>
+      <p>Novela gráfica que trata sobre la importancia de enfrentarse a los miedos con valentía. Una historia tierna y divertida ideal para abordar la gestión emocional en la adolescencia.</p>
+    </div>
+
+
+
+<div class="card">
+      <img src="img/conociendomisemociones.jpg" alt="Conociendo mis emociones siento y pienso mejor" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Conociendo mis emociones siento y pienso mejor</h3>
+      <p><strong>Autor:</strong> Francisco Villar <br>
+      <strong>ISBN:</strong> 978-84-10050-33-4</p>
+      <p>Aprende a escuchar y a validar tus emociones. Miedo, rabia, tristeza, alegría… ¿Cuántas emociones hay? ¿El amor es una emoción? ¿Hay emociones positivas y negativas? ¿Para qué sirven? ¿Hay que dejarse guiar por las emociones ?¿Qué relación hay entre lo que siento y lo que pienso? </p>
+    </div>
+
+<div class="card">
+      <img src="img/losmonstruos.jpg" alt="Los monstruos también lloran" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Los monstruos también lloran</h3>
+      <p><strong>Autor:</strong>Guillaume Duprat <br>
+      <strong>ISBN:</strong> 978-84-17374-39-6</p>
+      <p>Furia, amor, decepción, venganza, miedo ¿Sabías que incluso las criaturas más monstruosas pueden sentir emociones? Métete en la cabeza de los monstruos y descubre, cuando levantes las solapas, quien hace temblar el Yeti o el corazón tierno de King Kong. Doce historias de monstruos explicadas ¡por los mismos monstruos!  </p>
+    </div>
+
+<div class="card">
+      <img src="img/cuentame.jpg" alt="Cuéntame cuando sí anidé en una tripa y sí nací" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Cuéntame cuando sí anidé en una tripa y sí nací</h3>
+      <p><strong>Autor:</strong>Cristina Cortés <br>
+      <strong>ISBN:</strong> 978-84-330-3096-2</p>
+      <p>"Cuéntame cuando sí anidé en una tripa y sí nací" busca, mediante el lenguaje metafórico y las ilustraciones con fondo y trasfondo marino, trasladarnos al inmenso y profundo azul obscuro de las emociones, sobre todo a ese paraje emocional donde se esconden, se arrinconan, necesidades y emociones básicas no cubiertas de afecto, calor, sosiego y seguridad.  </p>
+    </div>
+
+<div class="card">
+      <img src="img/elviaje.jpg" alt="El viaje de las emociones" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>El viaje de las emociones</h3>
+      <p><strong>Autor:</strong>LLuis Guzmán <br>
+      <strong>ISBN:</strong> 978-84-127588-9-4</p>
+      <p>El viaje de las emociones narra las aventuras de una cuadrilla de amigos y amigas: Alex, Tate, Najat, Gemma y Alberto. Personajes que emprenderán un viaje a través de diferentes paisajes mágicos. Cada escena les descubrirá una emoción única, un color que los guiará hacia una comprensión más profunda y una gestión saludable de las emociones.   </p>
+    </div>
+
+    <div class="card">
+      <img src="img/diariodeemociones.jpg" alt="Mi diario de emociones" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Mi diario de emociones</h3>
+      <p><strong>Autor:</strong> Varios autores<br>
+      <strong>ISBN:</strong> 9788418592232</p>
+      <p>Un cuaderno interactivo para que los niños aprendan a identificar, nombrar y gestionar sus emociones de forma creativa. Fomenta el autocontrol desde la escritura y el dibujo.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+ <footer>
+    EscolaDiversa - Competencia Clave: Autoestima
+  </footer>
+
+  <script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Resolución de Conflictos</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+       box-shadow: 0 0 10px 10px #00ffff66, 0 0 120px 60px #00ffff33 inset;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .inicio-btn {
+      background: #00ffff;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    nav button {
+      background: #111;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    nav button:hover {
+      background: #00ffff;
+      color: #000;
+    }
+    section { display: none; }
+    section.active {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #00ffff44;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #00ffff22;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #00ffff;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .card p, .card a {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .card a { text-decoration: underline; }
+    .card img, iframe {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+<header>
+<h1>Resolución de Conflictos</h1>
+<p>Aprender a identificar, expresar y resolver desacuerdos de forma pacífica y constructiva</p>
+<button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i> Inicio</button>
+</header>
+ <nav>
+<button onclick="mostrar('publicaciones')"><i class="fas fa-book"></i> Publicaciones</button>
+    <button onclick="mostrar('dinamicas')"><i class="fas fa-users"></i> Dinámicas</button>
+    <button onclick="mostrar('videos')"><i class="fas fa-video"></i> Videos</button>
+    <button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i> TIC</button>
+    <button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i> Lecturas</button>
+  </nav>
+<section id="dinamicas">
+<div class="card">
+<h3><i class="fas fa-handshake"></i> Palabras puente</h3>
+<p>Los alumnos reflexionan sobre palabras que favorecen la reconciliación como 'perdón', 'gracias', 'comprendo' o 'compartamos'. Luego, en pequeños grupos, dramatizan situaciones donde esas palabras ayudan a resolver un conflicto. Esta actividad enseña la importancia del lenguaje conciliador para fomentar la paz escolar.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-users"></i> Cambio de rol</h3>
+<p>En parejas, los estudiantes representan un conflicto escolar, como una discusión por un material. Luego intercambian roles para comprender el punto de vista contrario. Esta técnica teatral fomenta la empatía, mejora la comprensión mutua y ayuda a generar soluciones más justas.</p>
+</div>
+
+<div class="card">
+<h3><i class="fas fa-user-shield"></i> El mediador imparcial</h3>
+<p>Se forma un trío: dos estudiantes en un conflicto ficticio y un tercero que actúa como mediador. Se entrena al mediador en escuchar activamente, resumir lo dicho y proponer soluciones. Esta dinámica entrena habilidades sociales clave y promueve la resolución autónoma de conflictos.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-brain"></i> Semáforo emocional</h3>
+<p>Utilizando los colores del semáforo, los alumnos identifican sus emociones ante conflictos: rojo (me detengo porque estoy muy molesto), amarillo (pienso antes de actuar), verde (actúo con calma). Esta técnica visual fortalece el autocontrol y facilita el reconocimiento emocional.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-microphone"></i> El micrófono de la paz</h3>
+<p>Con un objeto simbólico (micrófono), se da la palabra a quien desea expresar cómo se sintió durante un conflicto. Los demás escuchan sin interrumpir. Fomenta la escucha activa, la expresión de sentimientos y el respeto por la palabra ajena en el entorno escolar.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-brain"></i> Semáforo emocional</h3>
+<p>Con cartulinas verde, amarilla y roja, los alumnos analizan sus emociones ante conflictos. Rojo (alto), amarillo (piensa), verde (actúa). Favorece el autocontrol y reflexión.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-microphone"></i> El micrófono de la paz</h3>
+<p>En grupo, solo quien sostiene el 'micrófono' puede hablar. Se expresan opiniones sobre un conflicto común. Fomenta el respeto del turno de palabra y la escucha activa.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-theater-masks"></i> Teatro sin palabras</h3>
+<p>Grupos representan conflictos sin hablar. El público interpreta y sugiere soluciones. Trabaja la expresión corporal, el análisis y la resolución creativa.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-lightbulb"></i> Ideas para la paz</h3>
+<p>Tormenta de ideas grupal sobre cómo resolver conflictos cotidianos en clase o en casa. Se votan las mejores y se ilustran. Desarrolla pensamiento cooperativo.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-dove"></i> Cadena de acuerdos</h3>
+<p>Cada grupo crea una 'cadena' donde cada eslabón es un acuerdo de convivencia. Se une a la de otros grupos. Refuerza el trabajo colaborativo y los valores comunes.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-comment-dots"></i> Yo me siento...</h3>
+<p>Los alumnos completan frases como 'Yo me siento...' ante situaciones molestas. El grupo reflexiona sobre cómo comunicar sin atacar. Fomenta la comunicación asertiva.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-random"></i> Dado del conflicto</h3>
+<p>Un dado gigante con preguntas como: ¿qué sientes?, ¿qué necesitas?, ¿cómo lo resolverías? Se usa en simulaciones de desacuerdos. Promueve el análisis emocional.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-heart"></i> Gestos que calman</h3>
+<p>En pequeños grupos, identifican gestos o acciones que ayudan a calmar una discusión. Los representan y comparten. Refuerza la empatía y la inteligencia emocional.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-glasses"></i> Con los lentes del otro</h3>
+<p>Los alumnos eligen una situación conflictiva y escriben cómo la ve cada parte. Luego lo leen en voz alta. Fomenta la descentralización del propio punto de vista.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-calendar-check"></i> Compromiso semanal</h3>
+<p>Cada alumno se compromete a una acción pacífica durante la semana. Se revisa si lo cumplió. Potencia la constancia en el comportamiento propositivo.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-magic"></i> La varita del acuerdo</h3>
+<p>En un conflicto ficticio, quien sostiene la varita debe proponer soluciones. Estimula la creatividad y la participación equitativa.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-paper-plane"></i> Cartas de reconciliación</h3>
+<p>Los alumnos escriben cartas simuladas para disculparse o pedir diálogo en un conflicto. Las leen en voz alta. Desarrolla habilidades de expresión emocional.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-user-edit"></i> Historias transformadas</h3>
+<p>Se leen cuentos con conflicto y se reescribe el final con una solución pacífica. Potencia la imaginación orientada al bien común.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-comments"></i> Círculo de palabra</h3>
+<p>Se abordan conflictos reales del grupo desde el diálogo respetuoso en círculo. Reglas: escucha, sin interrupciones, sin juzgar. Refuerza la convivencia.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-fire-extinguisher"></i> Apagando incendios</h3>
+<p>Se asigna a pequeños grupos la misión de 'apagar' conflictos comunes que aparecen en tarjetas. Deben proponer soluciones rápidas y positivas.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-child"></i> Ponte en mis zapatos</h3>
+<p>Dramatización donde cada niño interpreta a otro compañero que ha tenido un conflicto. Se reflexiona sobre emociones y malentendidos. Refuerza la empatía.</p>
+</div>
+<div class="card">
+<h3><i class="fas fa-bullseye"></i> Misión: reconciliar</h3>
+<p>Actividad gamificada donde el grupo tiene una misión: resolver 3 casos de conflicto. Deben seguir pautas de mediación para lograrlo y ganar puntos de paz.</p>
+</div>
+</section>
+<section id="publicaciones">
+
+<div class="card">
+<h3><i class="fas fa-handshake-angle"></i> La mediación como herramienta de prevención de la violencia escolar</h3>
+<p>Documento que aborda la mediación entre iguales como recurso preventivo en centros educativos.</p>
+<a href="https://www.imotiva.es/revista-de-mediacion/articulos/la-mediacion-como-herramienta-de-prevencion-de-la-violencia-escolar/" style="color:#00ffff; text-decoration:underline;" target="_blank">Ver publicación</a>
+</div>
+<div class="card">
+<h3><i class="fas fa-handshake-angle"></i> La mediación escolar como herramienta de educación para la paz</h3>
+<p>Tesis sobre el impacto de los programas de mediación escolar en el fortalecimiento del entorno de paz.</p>
+<a href="https://www.tdx.cat/bitstream/handle/10803/85718/TRLVG.pdf" style="color:#00ffff; text-decoration:underline;" target="_blank">Ver publicación</a>
+</div>
+<div class="card">
+<h3><i class="fas fa-user-friends"></i> Educación emocional para la resolución de conflictos en la escuela</h3>
+<p>Propuesta metodológica desde la educación social para prevenir conflictos mediante el desarrollo emocional.</p>
+<a href="https://dialnet.unirioja.es/descarga/articulo/6638825.pdf" style="color:#00ffff; text-decoration:underline;" target="_blank">Ver publicación</a>
+</div>
+<div class="card">
+<h3><i class="fas fa-school"></i> Resolución de conflictos en los centros escolares – SEP</h3>
+<p>Guía oficial que enfatiza la autorregulación y valores en el manejo de conflictos escolares.</p>
+<a href="https://educacionbasica.sep.gob.mx/wp-content/uploads/2023/03/Documento-Resolucion-de-conflictos_25_OCT_2022_21_X_27-ALTA.pdf" style="color:#00ffff; text-decoration:underline;" target="_blank">Ver publicación</a>
+</div>
+<div class="card">
+<h3><i class="fas fa-balance-scale"></i> La influencia positiva de la mediación escolar</h3>
+<p>Estudio que muestra cómo mejora la convivencia escolar, la empatía y el clima educativo.</p>
+<a href="https://www.redalyc.org/pdf/567/56726350022.pdf" style="color:#00ffff; text-decoration:underline;" target="_blank">Ver publicación</a>
+</div>
+<div class="card">
+<h3><i class="fas fa-globe"></i> Inteligencia emocional y la resolución de conflictos escolares</h3>
+<p>Análisis que evidencia la relación entre habilidades emocionales y resolución pacífica.</p>
+<a href="https://revistas.unisimon.edu.co/index.php/educacion/article/view/6755" style="color:#00ffff; text-decoration:underline;" target="_blank">Ver publicación</a>
+</div>
+<div class="card">
+<h3><i class="fas fa-comments"></i> Educación emocional como herramienta para prevenir el acoso escolar</h3>
+<p>Revisión que concluye que la inteligencia emocional reduce agresividad y fortalece la convivencia.</p>
+<a href="https://mcjournal.editorialdoso.com/index.php/home/article/view/42" style="color:#00ffff; text-decoration:underline;" target="_blank">Ver publicación</a>
+</div>
+<div class="card">
+<h3><i class="fas fa-user-tie"></i> Emociones y habilidades sociales en conflictos escolares</h3>
+<p>TFM sobre el rol de las emociones y la mediación en el ámbito educativo.</p>
+<a href="https://uvadoc.uva.es/handle/10324/70278" style="color:#00ffff; text-decoration:underline;" target="_blank">Ver publicación</a>
+</div>
+<div class="card">
+<h3><i class="fas fa-user-friends"></i> Cartilla de mediación escolar</h3>
+<p>Material práctico que explica paso a paso la implementación de mediación en las aulas.</p>
+<a href="https://todosobremediacion.com.ar/wp-content/uploads/2022/08/MEDIACION-ESCOLAR-Mediando-para-convivir.pdf" style="color:#00ffff; text-decoration:underline;" target="_blank">Ver publicación</a>
+</div>
+<div class="card">
+<h3><i class="fas fa-school"></i> Mediación escolar – SGCTIE</h3>
+<p>Resumen oficial sobre funcionamiento y beneficios de la mediación escolar en centros.</p>
+<a href="https://www.educacionfpydeportes.gob.es/mc/sgctie/convivencia-escolar/en-accion/mediacion-escolar.html" style="color:#00ffff; text-decoration:underline;" target="_blank">Ver publicación</a>
+</div>
+</section>
+
+<section id="videos">
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ef5350;"></i> El náufrago</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/GQRw4sSnwr0?si=UdCbVUgfocPIuXr1" title="El náufrago" frameborder="0" allowfullscreen></iframe>
+      <p>Dos náufragos con personalidades distintas deben aprender a convivir. Enseña cooperación, escucha activa y respeto mutuo.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ef5350;"></i> Carrot Crazy</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/7V7MOk0FZrg?si=q3BL_ll3eM4Bcu3j" title="Carrot Crazy" frameborder="0" allowfullscreen></iframe>
+      <p>Dos cazadores compiten por atrapar conejos. Perfecto para hablar de competencia destructiva y consecuencias de la obsesión.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ef5350;"></i> La rama de olivo</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/h8RoTy3Mat0?si=QgaVnXgfEvmYsaL8" title="La rama de olivo" frameborder="0" allowfullscreen></iframe>
+      <p>Un conflicto entre dos ratones se transforma en una metáfora de paz. Ideal para explicar mediación y acuerdos justos.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ef5350;"></i> El pequeño zapatero</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/aJ7lcI4_Ef8?si=HOUZxSH_T52tLQYW" title="El pequeño zapatero" frameborder="0" allowfullscreen></iframe>
+      <p>Mr. Minino y un cliente malhumorado deberán encontrar la forma de entenderse. Fomenta empatía y gestión emocional.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ef5350;"></i> Día y noche</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/BeDqPfI2o0M?si=Ll4cd_O6953SpK5L" title="Día y noche" frameborder="0" allowfullscreen></iframe>
+      <p>Dos personajes distintos se enfrentan hasta que descubren que sus diferencias pueden complementarse. Maravilloso para trabajar inclusión.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ef5350;"></i> Presto</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/D4Dnm6dkOVI?si=4H1nuyV-3-F5WPV8" title="Presto" frameborder="0" allowfullscreen></iframe>
+      <p>Un mago y su conejo chocan por falta de reconocimiento. Ideal para debatir sobre respeto y trabajo en equipo.</p>
+    </div>
+
+ <div class="card">
+      <h3><i class="fas fa-film" style="color:#e57373;"></i> MarMar enseña resolución de conflictos</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/uasIeu7CM_0" title="MarMar Teaches Kids Conflict Resolution" frameborder="0" allowfullscreen></iframe>
+      <p>Vídeo corto y ameno donde MarMar explica cómo manejar conflictos con compañeros de forma pacífica y divertida.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#e57373;"></i> Resolución de conflictos: Asertivo, Agresivo, Pasivo</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/K59PwiIz2d8" title="Resolución de Conflictos para niños" frameborder="0" allowfullscreen></iframe>
+      <p>Explica claramente estilos de comunicación (agresivo, pasivo, asertivo) y cómo elegir el adecuado para resolver conflictos.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#e57373;"></i> Conflict Resolution Strategies</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/KjePj4rElSE" title="Conflict Resolution Strategies" frameborder="0" allowfullscreen></iframe>
+      <p>Demuestra cómo la empatía y la escucha activa ayudan a solucionar malentendidos y problemas comunes.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#e57373;"></i> Ayudando a los niños a resolver conflictos</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/HbPGxL2Wjz0" title="Ayudando a los niños a resolver conflictos" frameborder="0" allowfullscreen></iframe>
+      <p>Sesame Street ofrece herramientas visuales y situaciones cotidianas para enseñar mediación y resolución emocional.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#e57373;"></i> Perspective and Empathy: Lesson on Conflict</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/aULfHx6jkm4" title="Perspective and Empathy" frameborder="0" allowfullscreen></iframe>
+      <p>Explora cómo adoptar diferentes puntos de vista y practicar la empatía mejora la resolución de conflictos.</p>
+    </div>
+
+  <div class="card">
+      <h3><i class="fas fa-film" style="color:#e57373;"></i> Mejor ejemplo de mediación y resolución de conflictos</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/ep-nqKR39V4?si=s2S4pJo-ne48v37s" title="Mejor ejemplo de mediación y resolución de conflictos" frameborder="0" allowfullscreen></iframe>
+      <p>Desde el liderazgo, resulta básico tratar de averiguar cual es la "media naranja" que le interesa a nuestros colaboradores para actuar a favor de la misma y no en contra.</p>
+    </div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#ef5350;"></i> Elbow Room – conflicto y espacio personal</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/n90T-zWivqE" title="Elbow Room" frameborder="0" allowfullscreen></iframe>
+  <p><strong>Edad:</strong> 6–12 años • <strong>Tiempo:</strong> 5 min<br>
+  Cortometraje animado que plantea conflictos por el espacio personal y enseña a resolverlos mediante comunicación y respeto mutuo.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> ¿Cómo resolver conflictos? para niños</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/lPccr4sx2Lk" title="¿Cómo resolver conflictos? para niños" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Vídeo que enseña formas amigables y pacíficas de resolver conflictos entre niños. :contentReference[oaicite:0]{index=0}</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Resolvemos conflictos de manera pacífica</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/JTP6VI30a50" title="Resolvemos conflictos de manera pacífica" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Explica por qué aparecen los conflictos y ofrece recomendaciones para gestionarlos sin violencia. :contentReference[oaicite:1]{index=1}</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Resolución de conflictos para niños (asertivo)</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/K59PwiIz2d8" title="Resolución de conflictos para niños Asertivo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Vídeo educativo que enseña qué es un conflicto y cómo gestionarlo mediante la asertividad. :contentReference[oaicite:2]{index=2}</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style("color:#4db6ac;"></i> El Puente – Resolución de conflictos (Cortometraje)</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/M775K3jZneM" title="El Puente - Resolución de conflictos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Un cortometraje que presenta una historia con conflicto y muestra formas de resolverlo colaborativamente. :contentReference[oaicite:3]{index=3}</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Ayudando a los niños a resolver conflictos</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/HbPGxL2Wjz0" title="Ayudando a los niños a resolver conflictos" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Vídeo que explica cómo surge un conflicto en relaciones infantiles y cómo puede aprenderse su resolución. :contentReference[oaicite:4]{index=4}</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Entendiendo los conflictos: tipos y gestión</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/Bta2-_wET8" title="Entendiendo los conflictos tipos y gestión" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>Vídeo que describe los diferentes tipos de conflictos y cómo gestionarlos de forma adecuada. :contentReference[oaicite:5]{index=5}</p>
+</div>
+
+  </div>
+</section>
+
+<section id="tic">
+
+    <div class="card">
+      <h3><i class="fas fa-tablet-alt" style="color:#ffd54f;"></i> B‑resol (app anti‑bullying)</h3>
+      <p>Permite a alumnos enviar alertas o mensajes sobre un conflicto de forma anónima a través del centro, favoreciendo la gestión y mediación.</p>
+      <a href="https://www.educaweb.com/noticia/2019/05/02/cinco-apps-luchar-contra-bullying-18792/" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver app B‑resol</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-mobile-alt" style="color:#ffd54f;"></i> Andrea (app convivencia)</h3>
+      <p>Facilita la comunicación anónima entre alumnado y profesorado para reportar y mediación de casos de acoso escolar.</p>
+      <a href="https://www.educaweb.com/noticia/2019/05/02/cinco-apps-luchar-contra-bullying-18792/" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver app Andrea</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-globe" style="color:#ffd54f;"></i> Artículo: Resolución pacífica con TIC (PDF)</h3>
+      <p>Revisión de estrategias TIC para mediar conflictos en el aula, destacando la comunicación digital y proyectos interactivos :contentReference[oaicite:1]{index=1}.</p>
+      <a href="https://www.revistaespacios.com/a20v41n18/a20v41n18p20.pdf" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver documento</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-chalkboard-teacher" style="color:#ffd54f;"></i> Portal EstraDigital</h3>
+      <p>Herramienta online desde la Universidad de la Sabana con recursos digitales para mediar conflictos y planificar actividades de convivencia escolar :contentReference[oaicite:2]{index=2}.</p>
+      <a href="https://www.unisabana.edu.co/noticias/al-dia/el-papel-de-las-tic-para-resolver-conflictos" target="_blank" style="color:#00ffff; text-decoration:underline;">Acceder al portal</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-users" style="color:#ffd54f;"></i> Protocolo digital de resolución</h3>
+      <p>Protocolo paso a paso para mediar conflictos en primaria con apoyo TIC: calma, comunicación, mediación y cierre :contentReference[oaicite:3]{index=3}.</p>
+      <a href="https://www.responsiveclassroom.org/a-conflict-resolution-protocol-for-elementary-classrooms/" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver protocolo</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-brain" style="color:#ffd54f;"></i> Juego AR LINA</h3>
+      <p>Juego de realidad aumentada diseñado para fomentar la colaboración, el sentido de pertenencia y prevención de conflictos en grupos de 10+ años :contentReference[oaicite:4]{index=4}.</p>
+      <a href="https://arxiv.org/abs/2204.12917" target="_blank" style="color:#00ffff; text-decoration:underline;">Ver estudio LINA</a>
+    </div>
+
+
+</section>
+<section id="lecturas">
+
+   <div class="card">
+      <img src="img/elpequenonicolas.jpg" alt="El pequeño Nicolás" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>El pequeño Nicolás</h3>
+      <p><strong>Autor:</strong> René Goscinny<br>
+      <strong>Edad:</strong> 8–12 años</p>
+      <p>Las divertidas travesuras de Nicolás y su pandilla muestran cómo resolver malentendidos y conflictos entre amigos con humor y empatía. :contentReference[oaicite:4]{index=4}</p>
+    </div>
+
+  <div class="card">
+      <img src="img/elcongresodelosratones.jpg" alt="El congreso de los ratones" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>El congreso de los ratones</h3>
+      <p><strong>Edad:</strong> 9–12 años</p>
+      <p>Una fábula clásica adaptada donde los ratones deben cooperar para afrontar un peligro común, aprendiendo a debatir, organizarse y llegar a acuerdos.</p>
+    </div>
+
+<div class="card">
+      <img src="img/hermanapequena.jpg" alt="Hermana pequeña, pequeña canguro" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Hermana pequeña, pequeña canguro</h3>
+      <p><strong>Autor:</strong> Ann M. Martin<br>
+      <strong>Edad:</strong> 9–12 años</p>
+      <p>Una historia sobre burlas escolares y aceptación personal. La protagonista aprenderá a lidiar con la incomodidad del grupo social y redefinir sus vínculos. :contentReference[oaicite:4]{index=4}</p>
+    </div>
+
+<div class="card">
+  <img src="img/ysimedefiendo.jpg" alt="¿Y si me defiendo?" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>¿Y si me defiendo?</h3>
+  <p><strong>Autor:</strong> Elisabeth Zöller<br>
+     <strong>Edad:</strong> 10–12 años<br>
+     <strong>ISBN:</strong> 978‑84‑236‑7931‑7</p>
+  <p>Krissi sufre acoso escolar de un grupo de matones. Huyendo, provoca que compañeros, familia y profesorado reflexionen sobre su situación hasta intervenir y ayudarle. Trata el miedo, la necesidad de apoyo, la comunicación y la mediación en la escuela. :contentReference[oaicite:1]{index=1}</p>
+</div>
+
+<div class="card">
+  <img src="img/tuganasyogano.jpg" alt="Tú ganas, yo gano" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Tú ganas, yo gano</h3>
+  <p><strong>Autor:</strong> David L. Anderson & Mary Scannell<br>
+     <strong>Edad:</strong> 10–14 años aproximado</p>
+  <p>Manual dinámico con estrategias para transformar conflictos en soluciones creativas donde todos ganan: asertividad, escucha activa, desactivar luchas de poder y fomentar la comunicación cooperativa. :contentReference[oaicite:1]{index=1}</p>
+</div>
+
+<div class="card">
+  <img src="img/resoluciondeconflictos.jpg" alt="Resolución de conflictos para niños" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Resolución de conflictos para niños</h3>
+  <p><strong>Autor:</strong> Joss Reed<br>
+     <strong>Edad:</strong> 8–12 años<br>
+     <strong>ISBN:</strong> 979‑8892961325</p>
+  <p>Guía ilustrada con estrategias prácticas para que los niños aprendan a dialogar, escuchar activamente, expresar sus emociones y resolver disputas de forma pacífica. Parte de la serie "Detectives emocionales". Publicado en junio 2024. :contentReference[oaicite:1]{index=1}</p>
+</div>
+
+<div class="card">
+  <img src="img/lospequenosmediadores.jpg" alt="Pequeños mediadores" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Pequeños mediadores</h3>
+  <p><strong>Autor:</strong> Blanca Martí de Ahumada y Varios<br>
+     <strong>Edad:</strong> 6–12 años<br>
+     <strong>ISBN:</strong> 978‑84‑17841‑28‑7</p>
+  <p>Colección de cuentos ilustrados con material didáctico. Enseña a comprender conflictos, escuchar a los demás y aplicar herramientas básicas de mediación adaptadas a la infancia. :contentReference[oaicite:1]{index=1}</p>
+</div>
+
+
+</div>
+</section>
+<footer>
+    Escola Diversa - Competencia Clave: Resolución de Conflictos
+  </footer>
+<script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
+
+
